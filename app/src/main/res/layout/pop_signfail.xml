@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/lin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="480px"
+        android:layout_height="140px"
+        android:textSize="30px"
+        android:gravity="center"
+        android:background="@drawable/shape_signok_bj"
+        android:text="无效的二维码" />
+
+</com.zhy.autolayout.AutoLinearLayout>

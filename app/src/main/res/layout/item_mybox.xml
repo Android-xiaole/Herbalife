@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="235px"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:text="名称"
+        android:textColor="#333"
+        android:textSize="30px" />
+
+    <ImageView
+        android:id="@+id/iv_new"
+        android:layout_width="48px"
+        android:layout_height="20px"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:src="@drawable/img_mybox_new" />
+
+</com.zhy.autolayout.AutoFrameLayout>

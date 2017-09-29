@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>//对应ActionBar的颜色。
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>//对应状态栏的颜色
+        <item name="colorAccent">@color/colorAccent</item>//对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。
+    </style>
+
+
+    <!-- text_button -->
+    <style name="demo_camera_configbar_text_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- component entry button -->
+    <style name="demo_component_entry_button">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:drawablePadding">16dp</item>
+    </style>
+
+    <style name="pop_anim">
+        <item name="android:windowEnterAnimation">@anim/pop_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_anim_out</item>
+    </style>
+
+    <style name="RedTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
+    </style>
+
+
+    <!--<style name="head_default">-->
+        <!--<item name="android:layout_width">fill_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/height_100px</item>-->
+    <!--</style>-->
+
+    <style name="message_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3dp</item>
+        <item name="android:background">#efddd7</item>
+    </style>
+
+    <style name="text_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">tagClick</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

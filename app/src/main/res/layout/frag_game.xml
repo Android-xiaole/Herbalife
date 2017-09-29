@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:background="@drawable/img_game_mapheadbj"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_back"-->
+                <!--android:layout_width="48px"-->
+                <!--android:layout_height="48px"-->
+                <!--android:layout_marginLeft="40px"-->
+                <!--android:layout_marginTop="60px"-->
+                <!--android:onClick="onClick"-->
+                <!--android:visibility="invisible"-->
+                <!--android:src="@drawable/img_game_back" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="每解锁一个场景距离您的惊喜更近一步"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="快来参加发现之旅，发现您的梦幻惊喜"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="您当前的积分："
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_unlock6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（您当前积分已达标，请找您的领队兑换礼品）"
+                    android:textColor="@color/white"
+                    android:textSize="30px"
+                    android:visibility="gone" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.herbalife.myapplication.GridViewForScrollView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:listSelector="@color/white"
+                android:numColumns="3"
+                android:padding="10px"
+                android:verticalSpacing="10px"></com.herbalife.myapplication.GridViewForScrollView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="366px"
+                android:layout_height="78px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="77px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/img_game_button"
+                android:text="揭秘终极主题"
+                android:textColor="@color/white"
+                android:textSize="34px"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/frameLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_bg"
+            android:visibility="visible" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="100px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/img_game_upload"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="156px"
+                android:layout_marginLeft="50px"
+                android:layout_gravity="bottom"
+                android:src="@drawable/img_game_text"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

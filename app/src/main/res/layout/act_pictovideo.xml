@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.herbalife.myapplication.video.view.DrawPadView
+            android:id="@+id/drawPadView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.herbalife.myapplication.video.view.DrawPadView>
+
+        <FrameLayout
+            android:id="@+id/lin_play"
+            android:layout_width="400px"
+            android:layout_height="280px"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/corners_btn_orange_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50px"
+                android:text="点击播放"/>
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:src="@drawable/img_play" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频正在生成中，请勿退出当前界面!"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:textColor="@color/red"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.herbalife.myapplication"
+    android:installLocation="preferExternal" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!--  ZXing-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/img_appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Act_Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        - <!--  *******************公共分组控制器******************* -->
+        <activity android:name="org.lasque.tusdk.impl.activity.TuFragmentActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        - <!--  示例 -->
+        <activity android:name=".examples.component.GifImageViewActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".examples.feature.FilterEditorSampleActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name=".activity.Act_Home"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".activity.Act_Game"></activity>
+        <activity android:name=".activity.Act_GameMap"></activity>
+        <activity android:name=".activity.Act_GameOver"></activity>
+        <activity android:name=".activity.Act_MyBox"></activity>
+        <activity android:name=".activity.Act_Photo"></activity>
+        <activity android:name=".touchimageview.PictureBigLookActivity"></activity>
+        <activity android:name=".zxing.activity.Act_ZXing"></activity>
+        <activity android:name=".zxing.activity.Act_ScanOk"></activity>
+        <activity android:name=".activity.Act_Camera"></activity>
+
+        <activity
+            android:name=".camera.ui.CameraActivity"/>
+        <activity
+            android:name=".camera.ui.CropPhotoActivity"/>
+        <activity
+            android:name=".camera.ui.AlbumActivity"/>
+        <activity
+            android:name=".camera.ui.PhotoProcessActivity"/>
+        <activity android:name=".camera.ui.EditTextActivity"/>
+        <activity android:name=".video.Act_PicTOVideo"></activity>
+        <activity android:name=".video.Act_VideoList"></activity>
+
+        <activity android:name="com.jarek.imageselect.activity.ImageSelectActivity"></activity>
+        <activity android:name="com.jarek.imageselect.activity.PreviewImageActivity"></activity>
+
+    </application>
+
+</manifest>

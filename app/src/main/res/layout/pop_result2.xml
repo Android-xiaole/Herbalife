@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_pop2_bg"
+        android:layout_marginBottom="200px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_marginTop="182px"
+                android:src="@drawable/img_pop_close" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="712px"-->
+                    <!--android:text="太棒了！"-->
+                    <!--android:textColor="#fff6b5"-->
+                    <!--android:textSize="60px" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="恭喜您当前积分已达标"
+                    android:textColor="@color/white"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请分享活动精彩照片至朋友圈后"
+                    android:textColor="@color/white"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="找到您的领队领取神秘大奖吧"
+                    android:textColor="@color/white"
+                    android:textSize="24px" />
+
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="300px"
+                    android:layout_height="90px"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginTop="20px"
+                    android:background="@drawable/img_game_button"
+                    android:text="知道了"
+                    android:textColor="@color/white"
+                    android:textSize="32px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

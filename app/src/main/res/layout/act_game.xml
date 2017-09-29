@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="340px"
+                android:background="@drawable/img_game_mapheadbj"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="60px"
+                    android:onClick="onClick"
+                    android:src="@drawable/img_game_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40px"
+                    android:text="没解锁一个场景距离您的惊喜近一步"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="快来发现您的梦幻惊喜吧"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <com.herbalife.myapplication.GridViewForScrollView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10px"
+                android:listSelector="@color/white"
+                android:numColumns="3"
+                android:padding="10px"
+                android:verticalSpacing="10px"></com.herbalife.myapplication.GridViewForScrollView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="366px"
+                android:layout_height="78px"
+                android:background="@drawable/img_game_button"
+                android:text="揭秘终极主题"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="77px"
+                android:textSize="34px"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

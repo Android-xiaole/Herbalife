@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_color">#64b01b</color>
+    <color name="color_blue">#76D3EB</color>
+    <color name="color_grayt">#7C7C7C</color>
+    <color name="white">#ffffff</color>
+    <color name="none">#00ffffff</color>
+    <color name="white2">#5000b459</color>
+    <color name="black">#000000</color>
+    <color name="backgrouand">#f2f2f2</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

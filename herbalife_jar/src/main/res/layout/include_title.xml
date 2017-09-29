@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auto_frameL"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:background="@color/title_color"
+    android:orientation="vertical">
+    <!--android:fitsSystemWindows="true"//根布局设置这个布局就不会扩展到状态栏了-->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/auto_icon"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginTop="25px"
+        android:gravity="left"
+        android:minWidth="100px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_icon"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_icont"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="40px"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/auto_menu"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="25px"
+        android:gravity="right|center_vertical"
+        android:minWidth="100px"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_marginRight="40px">
+
+            <TextView
+                android:id="@+id/title_menu"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_home_navbar_search_white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_redPoint"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginBottom="10px"
+                android:visibility="gone"
+                android:src="@drawable/img_redpoint" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/title_menut"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40px"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:text="确定"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

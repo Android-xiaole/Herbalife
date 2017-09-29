@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" filepath="$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Herbalife.iml" filepath="$PROJECT_DIR$/Herbalife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" filepath="$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TuSDK/TuSDK.iml" filepath="$PROJECT_DIR$/TuSDK/TuSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herbalife_jar/herbalife_jar.iml" filepath="$PROJECT_DIR$/herbalife_jar/herbalife_jar.iml" />
+    </modules>
+  </component>
+</project>

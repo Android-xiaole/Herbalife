@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:id="@+id/lin_tab"
+    android:background="@color/backgrouand"
+    android:orientation="horizontal">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lin_tab1"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:src="@drawable/select_tab1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textSize="18px"
+            android:textColor="@drawable/select_tab_textc"
+            android:text="发现" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lin_tab2"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_tab2"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:src="@drawable/select_tab2"/>
+
+        <TextView
+            android:id="@+id/tv_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:textSize="18px"
+            android:textColor="@drawable/select_tab_textc"
+            android:text="相机" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--<com.zhy.autolayout.AutoLinearLayout-->
+        <!--android:id="@+id/lin_tab3"-->
+        <!--android:layout_width="0px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="48px"-->
+            <!--android:layout_height="48px"-->
+            <!--android:src="@drawable/select_tab3"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10px"-->
+            <!--android:textSize="18px"-->
+            <!--android:textColor="@drawable/select_tab_textc"-->
+            <!--android:text="电子相册" />-->
+    <!--</com.zhy.autolayout.AutoLinearLayout>-->
+
+    <!--<com.zhy.autolayout.AutoLinearLayout-->
+        <!--android:id="@+id/lin_tab4"-->
+        <!--android:layout_width="0px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="48px"-->
+            <!--android:layout_height="48px"-->
+            <!--android:src="@drawable/select_tab4"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10px"-->
+            <!--android:textSize="18px"-->
+            <!--android:textColor="@drawable/select_tab_textc"-->
+            <!--android:text="个人中心" />-->
+    <!--</com.zhy.autolayout.AutoLinearLayout>-->
+</com.zhy.autolayout.AutoLinearLayout>

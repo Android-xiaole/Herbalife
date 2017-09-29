@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您揭秘成功！"
+        android:textColor="#ffffff"
+        android:textSize="32px"
+        android:layout_marginTop="904px"/>
+
+    <Button
+        android:layout_width="650px"
+        android:layout_height="90px"
+        android:text="确定"
+        android:textSize="32px"
+        android:layout_marginTop="90px"
+        android:background="@drawable/shape_btn"
+        android:onClick="onClick"
+        android:textColor="#f7bc05"/>
+
+</LinearLayout>

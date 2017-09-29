@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_404"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_404"
+        android:layout_width="502px"
+        android:layout_height="340px"
+        android:layout_marginTop="60px"
+        android:src="@drawable/img_message_blank"/>
+
+    <TextView
+        android:id="@+id/tv_404_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:text="Ah！"
+        android:textColor="#444444"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/tv_404_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="这里空空荡荡，啥都没有"
+        android:textColor="#999999"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btn_404"
+        android:layout_width="wrap_content"
+        android:layout_height="68px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/shape_btn_404"
+        android:text="重新加载"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:visibility="gone"
+        android:textColor="#999999"
+        android:textSize="28px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

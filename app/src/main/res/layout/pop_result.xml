@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="620px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_pop_bg" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_marginTop="182px"
+            android:src="@drawable/img_pop_close" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal"
+            android:id="@+id/autoLinearLayout">
+
+            <ImageView
+                android:id="@+id/iv_res"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_pop_img" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_flower"
+            android:layout_width="match_parent"
+            android:layout_height="620px"
+            android:src="@drawable/img_pop_flower"
+            android:scaleType="fitXY" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="太棒了！"
+            android:textColor="#26b73f"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="恭喜您解锁成功"
+            android:textColor="#333"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您获取了一套精美的相框和贴纸"
+            android:textColor="#333"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="并获得**积分"
+            android:textColor="#333"
+            android:textSize="32px" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="300px"
+            android:layout_height="90px"
+            android:layout_marginBottom="60px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/img_gameover_button"
+            android:text="知道了"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

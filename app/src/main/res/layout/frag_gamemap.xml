@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_true"
+            android:layout_width="match_parent"
+            android:layout_height="720px"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_false"
+            android:layout_width="match_parent"
+            android:layout_height="720px"
+            android:scaleType="fitXY" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="720px"
+            android:background="#80000000"></View>
+
+        <include layout="@layout/include_title"></include>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_goleft"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginLeft="40px"
+                android:src="@drawable/img_game_map_back_left" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lin_lock"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_lock"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:src="@drawable/img_game_suo" />
+
+                <TextView
+                    android:id="@+id/tv_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:text="未解锁"
+                    android:textColor="@color/white"
+                    android:textSize="26px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_goright"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginRight="40px"
+                android:src="@drawable/img_game_map_back_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="12px"
+            android:layout_marginRight="17px"
+            android:text="1/9"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <TextView
+        android:id="@+id/tv_englishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:text="/Restaurant"
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_cnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="24px"
+        android:text="餐厅"
+        android:textColor="#333333"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:text="我们都是梦想家。同时我们也都是美食家，让我们来品味特别的异域餐厅没事吧。"
+        android:textColor="#333333"
+        android:visibility="gone"
+        android:textSize="30px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"></TextView>
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="70px"
+        android:src="@drawable/img_game_map_scan" />
+
+</com.zhy.autolayout.AutoLinearLayout>
